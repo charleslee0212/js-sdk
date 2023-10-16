@@ -1,6 +1,6 @@
 {
-  "name": "@kintone/rest-api-client",
-  "version": "5.0.0",
+  "name": "test-rest-api-client",
+  "version": "5.0.6",
   "publishConfig": {
     "access": "public"
   },
@@ -16,6 +16,7 @@
   "scripts": {
     "prebuild": "pnpm clean",
     "build": "tsc --build --force",
+    "build1": "tsc index.mjs --allowJS --declaration --emitDeclarationOnly",
     "postbuild": "run-p build:*",
     "lint": "eslint 'src/**/*.ts' --max-warnings 0",
     "prepublishOnly": "run-p build:umd_*",
@@ -79,6 +80,7 @@
   "exports": {
     ".": {
       "node": {
+        "types": "./lib/src/index.d.mts",
         "import": "./index.mjs",
         "require": "./lib/src/index.js",
         "default": "./lib/src/index.js"
