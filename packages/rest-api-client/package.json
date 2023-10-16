@@ -79,8 +79,12 @@
   },
   "exports": {
     ".": {
+      "types": {
+        "require": "./lib/src/index.d.ts",
+        "import": "./esm/src/index.d.ts",
+        "default": "./lib/src/index.d.ts"
+      },
       "node": {
-        "types": "./lib/src/index.d.mts",
         "import": "./index.mjs",
         "require": "./lib/src/index.js",
         "default": "./lib/src/index.js"
