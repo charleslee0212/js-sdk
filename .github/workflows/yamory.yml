@@ -3,7 +3,7 @@ name: yamory
 on:
   push:
     branches:
-      - master
+      - investigate/update-actions-node-setup-to-v4
       - yamory-*
 jobs:
   build:

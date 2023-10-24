@@ -3,7 +3,7 @@ name: test
 on:
   push:
     branches:
-      - master
+      - investigate/update-actions-node-setup-to-v4
       - "renovate/**"
   pull_request:
 

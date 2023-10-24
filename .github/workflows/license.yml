@@ -3,7 +3,7 @@ name: License
 on:
   push:
     branches:
-      - master
+      - investigate/update-actions-node-setup-to-v4
   pull_request:
 
 jobs:

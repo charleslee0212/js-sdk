@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - investigate/update-actions-node-setup-to-v4
 
 jobs:
   release:
